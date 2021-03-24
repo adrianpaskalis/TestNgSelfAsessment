@@ -93,20 +93,30 @@ public class selfAssesment {
 	
 	@Test(priority=11, groups="3rdPage")
 	public void pickTransportasi() {
-		driver.findElement(By.xpath("//*[@id=\"i22\"]/div[3]/div")).click();
+		driver.findElement(By.xpath("///*[@id=\"i22\"]/div[3]/div")).click();
+	}
+	
+	@Test(priority=12, groups="3rdPage")
+	public void isiTransportasi() {
+		driver.findElement(By.xpath("//*[@id=\"mG61Hd\"]/div[2]/div/div[2]/div[5]/div/div/div[2]/div/div[1]/div/div[1]/input")).sendKeys("-");
 	}
 	
 	
-	@Test(priority=12, groups="3rdPage")
+	@Test(priority=13, groups="3rdPage")
 	public void pickKegiatan() {
-		driver.findElement(By.xpath("//*[@id=\"i32\"]/div[3]")).click();
+		driver.findElement(By.xpath("//*[@id=\"i36\"]/div[3]/div")).click();
 	} 
+	
+	@Test (priority=14, groups="3rdPage")
+	public void isiKegiatan() {
+		driver.findElement(By.xpath("//*[@id=\"mG61Hd\"]/div[2]/div/div[2]/div[7]/div/div/div[2]/div/div[1]/div/div[1]/input")).sendKeys("-");	
+	}
 	
 	@Test(priority=13, groups="3rdPage")
 	public void pickKasus() {
-		driver.findElement(By.xpath("//*[@id=\"i42\"]/div[3]")).click();
+		driver.findElement(By.xpath("//*[@id=\"i50\"]/div[3]/div")).click();
 	} 
-	
+
 	@Test(priority=14, groups="3rdPage")
 	public void goTo4thPage() {
 		driver.findElement(By.xpath("//*[@id=\"mG61Hd\"]/div[2]/div/div[3]/div[1]/div/div[2]/span")).click();
